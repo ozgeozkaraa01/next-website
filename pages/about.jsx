@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import Head from "next/head";
 import { spring, useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "../components/Skills";
+import Experience from "../components/Experience";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -102,6 +103,7 @@ const About = () => {
             </div>
           </div>
           <Skills />
+          <Experience />
         </Layout>
       </main>
     </>
