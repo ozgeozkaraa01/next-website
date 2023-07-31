@@ -5,6 +5,8 @@ import Head from "next/head";
 import { spring, useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "../components/Skills";
 import Experience from "../components/Experience";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -36,6 +38,7 @@ const About = () => {
         <title>About Page</title>
         <meta name="description" content="any description" />
       </Head>
+      <Header />
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText text="Passion Fuels Purpose!" className="mb-16" />
@@ -106,6 +109,7 @@ const About = () => {
           <Experience />
         </Layout>
       </main>
+      <Footer />
     </>
   );
 };
