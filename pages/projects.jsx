@@ -4,6 +4,8 @@ import Layout from "../components/Layout";
 import AnimatedText from "../components/AnimatedText";
 import Link from "next/link";
 import { SocialIcon } from "react-social-icons";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const FeaturedProject = ({ type, title, summary, img, link }) => {
   return (
@@ -102,6 +104,7 @@ const Projects = () => {
         <title>Projects Page</title>
         <meta name="description" content="any description" />
       </Head>
+      <Header />
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText
@@ -175,6 +178,7 @@ const Projects = () => {
           </div>
         </Layout>
       </main>
+      <Footer />
     </>
   );
 };
