@@ -3,6 +3,7 @@ import AnimatedText from "../components/AnimatedText";
 import Layout from "../components/Layout";
 import Head from "next/head";
 import { spring, useInView, useMotionValue, useSpring } from "framer-motion";
+import Skills from "../components/Skills";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -100,6 +101,7 @@ const About = () => {
               </div>
             </div>
           </div>
+          <Skills />
         </Layout>
       </main>
     </>
