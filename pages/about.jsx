@@ -7,6 +7,7 @@ import Skills from "../components/Skills";
 import Experience from "../components/Experience";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import TransitionEffect from "../components/TransitionEffect";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -38,6 +39,7 @@ const About = () => {
         <title>About Page</title>
         <meta name="description" content="any description" />
       </Head>
+      <TransitionEffect />
       <Header />
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">

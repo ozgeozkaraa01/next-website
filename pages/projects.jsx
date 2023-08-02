@@ -6,6 +6,7 @@ import Link from "next/link";
 import { SocialIcon } from "react-social-icons";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import TransitionEffect from "../components/TransitionEffect";
 
 const FeaturedProject = ({ type, title, summary, img, link }) => {
   return (
@@ -104,6 +105,7 @@ const Projects = () => {
         <title>Projects Page</title>
         <meta name="description" content="any description" />
       </Head>
+      <TransitionEffect />
       <Header />
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="pt-16">

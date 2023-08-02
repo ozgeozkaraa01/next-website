@@ -5,6 +5,9 @@ import AnimatedText from "../components/AnimatedText";
 import Link from "next/link";
 import { motion, useMotionValue } from "framer-motion";
 import Image from "next/image";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import TransitionEffect from "../components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -100,6 +103,8 @@ const Articles = () => {
         <title>Articles Page</title>
         <meta name="description" content="any description" />
       </Head>
+      <TransitionEffect />
+      <Header />
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
         <Layout className="pt-16">
           <AnimatedText text="Words Can Change The World!" className="mb-16" />
@@ -150,6 +155,7 @@ const Articles = () => {
           </ul>
         </Layout>
       </main>
+      <Footer />
     </>
   );
 };
