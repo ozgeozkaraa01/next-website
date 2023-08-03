@@ -46,7 +46,7 @@ const Experience = () => {
       <h2 className="font-semibold text-5xl mb-24 w-full text-center">
         Experience
       </h2>
-      <div ref={ref} className="w-[75%] mx-auto relative">
+      <div ref={ref} className="w-[75%] mx-auto relative cursor-pointer">
         <motion.div
           style={{ scaleY: scrollYProgress }}
           className="absolute left-9 top-0 w-[1px] h-full bg-slate-300 origin-top"

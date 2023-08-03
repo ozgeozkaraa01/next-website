@@ -8,7 +8,7 @@ const Lilcon = ({ reference }) => {
   });
 
   return (
-    <figure className="absolute left-0 stroke-slate-300">
+    <figure className="absolute left-0 stroke-slate-500">
       <svg className="-rotate-90" width="75" height="75" viewBox="0 0 100 100">
         <circle cx="75" cy="50" r="20" className="stroke-1 fill-none" />
         <motion.circle
@@ -24,7 +24,7 @@ const Lilcon = ({ reference }) => {
           cx="75"
           cy="50"
           r="20"
-          className="animate-pulse stroke-1 fill-blue-300"
+          className="animate-pulse stroke-1 fill-[#17244f]"
         />
       </svg>
     </figure>
