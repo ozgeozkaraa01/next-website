@@ -107,7 +107,7 @@ const Projects = () => {
       </Head>
       <TransitionEffect />
       <Header />
-      <main className="w-full mb-16 flex flex-col items-center justify-center">
+      <main className="w-full flex flex-col items-center justify-center bg-[#e0eeec]">
         <Layout className="pt-16">
           <AnimatedText
             text="Imagination Trumps Knowledge!"

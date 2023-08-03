@@ -105,7 +105,7 @@ const Articles = () => {
       </Head>
       <TransitionEffect />
       <Header />
-      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
+      <main className="w-full flex flex-col items-center justify-center overflow-hidden bg-[#e0eeec]">
         <Layout className="pt-16">
           <AnimatedText text="Words Can Change The World!" className="mb-16" />
           <ul className="grid grid-cols-2 gap-16">

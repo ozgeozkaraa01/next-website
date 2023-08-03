@@ -42,7 +42,7 @@ const Experience = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <div className="my-64">
+    <div className="mt-64">
       <h2 className="font-semibold text-5xl mb-24 w-full text-center">
         Experience
       </h2>
