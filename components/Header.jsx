@@ -24,12 +24,24 @@ const CustomLink = ({ href, title, className = "" }) => {
 
 const Header = () => {
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between bg-[#e0eeec]">
       <nav className="">
-        <CustomLink href="/" title="Home" className="mr-4" />
-        <CustomLink href="/about" title="About" className="mx-4" />
-        <CustomLink href="/projects" title="Projects" className="mx-4" />
-        <CustomLink href="/articles" title="Articles" className="ml-4" />
+        <CustomLink href="/" title="Home" className="mr-4 text-[#244b45]" />
+        <CustomLink
+          href="/about"
+          title="About"
+          className="mx-4 text-[#244b45]"
+        />
+        <CustomLink
+          href="/projects"
+          title="Projects"
+          className="mx-4 text-[#244b45]"
+        />
+        <CustomLink
+          href="/articles"
+          title="Articles"
+          className="ml-4 text-[#244b45]"
+        />
       </nav>
 
       <nav className="flex items-center justify-center flex-wrap">
@@ -42,25 +54,25 @@ const Header = () => {
           <SocialIcon
             url="https://github.com/ozgeozkaraa01"
             target="_blank"
-            fgColor="#475569"
+            fgColor="#17244f"
             bgColor="transparent"
           />
           <SocialIcon
             url="https://www.linkedin.com/in/ozgenur-ozkara/"
             target="_blank"
-            fgColor="#475569"
+            fgColor="#17244f"
             bgColor="transparent"
           />
           <SocialIcon
             url="https://dribbble.com/ozgeozkaraa01"
             target="_blank"
-            fgColor="#475569"
+            fgColor="#17244f"
             bgColor="transparent"
           />
           <SocialIcon
             url="https://twitter.com/ozkaraozgee"
             target="_blank"
-            fgColor="#475569"
+            fgColor="#17244f"
             bgColor="transparent"
           />
         </motion.div>

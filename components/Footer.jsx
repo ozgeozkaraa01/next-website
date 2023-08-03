@@ -4,25 +4,23 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg">
+    <footer className="w-full border-t-[1px] border-solid border-gray-400 font-medium text-base bg-[#e0eeec]">
       <Layout className="py-8 flex items-center justify-between">
-        <span>
+        <span className="text-[#244b45]">
           {new Date().getFullYear()} &copy; All Right Reserved. Rights
         </span>
-        <div className="flex items-center">
-          Build With <span className="text-primary text-2xl px-1">&#9825;</span>
+        <div className="flex items-center text-[#244b45]">
+          Build With{" "}
+          <span className="text-[#64748b] text-base px-1">&#9734;</span>
           by&nbsp;
           <Link
-            href="/"
+            href="https://ozgenurozkara.vercel.app/"
             className="underline underline-offset-2"
             target={"_blank"}
           >
-            CodeBucks
+            ozgenurozkara
           </Link>
         </div>
-        <Link href="/" target={"_blank"}>
-          Suy hello
-        </Link>
       </Layout>
     </footer>
   );

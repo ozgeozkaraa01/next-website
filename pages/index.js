@@ -5,7 +5,6 @@ import AnimatedText from "../components/AnimatedText";
 import Link from "next/link";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import Footer from "../components/Footer";
-import HireMe from "../components/HireMe";
 import TransitionEffect from "../components/TransitionEffect";
 
 export default function Home() {
@@ -18,32 +17,24 @@ export default function Home() {
       </Head>
       <TransitionEffect />
       <Header />
-      <main className="flex items-center text-dark w-full min-h-screen">
+      <main className="flex items-center bg-[#e0eeec] w-full min-h-screen">
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
-            <div className="w-1/2">
-              <img
-                src="https://images.unsplash.com/photo-1587131766835-e5dfaf70ea20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80"
-                alt="photo"
-                className="w-full h-auto"
-              />
-            </div>
             <div className="w-1/2 flex flex-col items-center self-center">
               <AnimatedText
                 text="Turning Vision Into Reality With Code And Design."
-                className="!text-6xl !text-left"
+                className="!text-6xl !text-left !text-[#244b45]"
               />
-              <p className="my-4 text-base font-medium">
+              <p className="my-4 text-base text-gray-700 font-medium">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                enim ad minim veniam
               </p>
               <div className="flex items-center self-start mt-2">
                 <Link
                   href="/assets/dummy.pdf"
                   target={"_blank"}
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  className="flex items-center text-[#244b45] p-2.5 px-6 rounded-lg text-lg font-semibold border border-[#244b45]"
                   download={true}
                 >
                   Resume <BsBoxArrowUpRight className="w-6 ml-1" />
@@ -51,15 +42,21 @@ export default function Home() {
                 <Link
                   href="mailto:ozgenurozkara@gmail.com"
                   target={"_blank"}
-                  className="ml-4 text-lg font-medium capitalize text-dark underline"
+                  className="ml-4 text-lg font-medium capitalize text-gray-700 underline"
                 >
                   Contact
                 </Link>
               </div>
             </div>
+            {/* <div className="w-1/2">
+              <img
+                src="https://images.unsplash.com/photo-1530733895788-f39cc96b6ae8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+                alt="photo"
+                className="w-full h-auto"
+              />
+            </div> */}
           </div>
         </Layout>
-        <HireMe />
       </main>
       <Footer />
     </div>
